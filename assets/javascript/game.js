@@ -8,10 +8,10 @@ var resetAndStart = function() {
     $(".crystals").empty();
 
     var images = [
-        '/Users/drod/Desktop/Homecoding/Crystalgame/assets/images/greenCrystal.svg', 
-        '/Users/drod/Desktop/Homecoding/Crystalgame/assets/images/blueCrystal.svg', 
-        '/Users/drod/Desktop/Homecoding/Crystalgame/assets/images/redCrystal.svg', 
-        '/Users/drod/Desktop/Homecoding/Crystalgame/assets/images/yellowCrystal.svg'];
+        './assets/images/greenCrystal.svg', 
+        './assets/images/blueCrystal.svg', 
+        './assets/images/redCrystal.svg', 
+        './assets/images/yellowCrystal.svg'];
 
     random_result = Math.floor(Math.random() * 69 ) + 30; // hoisting
     
@@ -71,11 +71,4 @@ $(document).on("click", ".crystal", function () {
     
 });
 
-// a game with 4 Crystal and Random Result
-// Every crystal needs to have a random number between 1 - 12
-// when clicking any CRYSTAl, it should be adding with the previous result 
-// until it equal to the total score
-// if it is greater than the random result, we decrement a lost counter
-// if it is equal, then we increment a win counter
-// a new number should be generate every single time we win or lost
-// to those 4 crystals
+
